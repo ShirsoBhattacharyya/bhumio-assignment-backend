@@ -5,6 +5,7 @@ const getJira = async (req, res) => {
   try {
     const jiraApiToken = constants.JIRA_API_TOKEN;
     const email = constants.JIRA_EMAIL_ID;
+    console.log("here");
 
     // Fetching assigned tasks
     const assignedResponse = await jiraService.getJiraResponse(
@@ -12,6 +13,7 @@ const getJira = async (req, res) => {
       email,
       true
     );
+    console.log({assignedResponse});
     const assignedTickets = [];
     assignedResponse.data.issues.forEach((issue) => {
       const displayName = issue.fields.assignee.displayName;
@@ -25,6 +27,7 @@ const getJira = async (req, res) => {
       }
     });
     const assignedTasks = assignedTickets;
+    console.log(assignedTasks);
 
     // Fetching unassigned tasks
     const unassignedResponse = await jiraService.getJiraResponse(
@@ -40,6 +43,7 @@ const getJira = async (req, res) => {
       totalTasks: assignedResponse?.data?.total + unassignedTasks,
     });
   } catch (error) {
+    console.log(error);
     res.status(500).send("Internal Server Error");
   }
 };
