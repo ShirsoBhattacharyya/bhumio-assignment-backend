@@ -1,5 +1,5 @@
 const JIRA_API_TOKEN =
-  "ATATT3xFfGF0VRN5GOGtQBUhLd-rsSxzRz5swqhfkaIDSp6CKV1gOUyn7cx2KO8uFJenCYb5wp25Zk3_d8ubdWZwDF-vtqPMFRjJYmehu2yCimbtGUTNV_C9HvyFAe99oqvPfmJgscg5yco5_UhDCuZJHryF7XxYWokYNESyOj6veaM_e0eNFqY=ADAB96F5";
+  "ATATT3xFfGF0ROh5-4v2k6g5YCCdQ35SPmKgjn9WBN8J_7dK4AvA9zFpsqtlWtyUM6r82RaSyKFlJIWgjWFyQgzuN4imY0Hug7PaG4_rrYJ2VaNA_qLBPjApQPnYNdy9q8Ohd1wXTgZrutNUH-E1bW96e3Zuq2Bpl3v0jEx-_WA3wfr2IZJUwKM=FBE46879";
 const JIRA_EMAIL_ID = "shirso369@gmail.com";
 const JIRA_BASE_URL = "https://shirso369.atlassian.net";
 
